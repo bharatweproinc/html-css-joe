@@ -247,7 +247,7 @@
     padding-top: 100px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
 
@@ -365,7 +365,7 @@
 
 .solution-section {
     width: 100%;
-    height: 744px;
+    /* height: 744px; */
     background: linear-gradient(#ECFDF5, #EFF6FF);
     padding-top: 100px;
     display: flex;
@@ -400,8 +400,6 @@
 }
 
 .solution-box-container {
-    width: 1400px;
-    height: 300px;
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -410,8 +408,6 @@
 }
 
 .solution-box {
-    width: 434.66px;
-    height: 142px;
     border: 1px solid #363D49;
     border-radius: 16px;
     box-shadow: 0px 4px 6px -4 #0000001A;
@@ -419,9 +415,6 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-    padding-top: 30px;
-    padding-left: 35px;
-    padding-right: 35px;
 }
 
 .solution-box-icon {
@@ -448,7 +441,6 @@
     line-height: 20px;
     letter-spacing: 0%;
     color: #9CA3AF;
-    width: 226px;
 }
 
 .solution-bottom {
@@ -535,7 +527,7 @@
     }
 
     .icon-box::before {
-      content: "🏢"; /* Placeholder for building icon */
+      content: ""; /* Placeholder for building icon */
       font-size: 40px;
       color: #333;
     }
