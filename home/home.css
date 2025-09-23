@@ -523,7 +523,7 @@
     letter-spacing: 0%;
     margin-left: 10px;
 }
-
+/* --------------------------------------------------------------------------------------------------------------- */
 
 
 .site-example-container {
@@ -671,7 +671,120 @@
       text-align: center;
     }
 
-    .recurring-income {
+    /* Responsive styles */
+
+/* Tablets and below */
+@media (max-width: 1200px) {
+  .site-example-container {
+    height: auto; /* let content define height */
+    padding: 40px 20px;
+  }
+
+  .site-example-container > .cards {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .site-example-container .card-left,
+  .site-example-container .card-right {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .site-example-container .title h2 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .site-example-container .title p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .site-example-container .card-left {
+    height: auto;
+    padding: 15px;
+  }
+
+  .card-left h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .card-left p {
+    font-size: 13px;
+  }
+
+  .card-right {
+    height: auto;
+    padding: 15px;
+  }
+
+  .card-right h3 {
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .note {
+    font-size: 12px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .site-example-container {
+    padding: 20px 10px;
+  }
+
+  .site-example-container .title h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .site-example-container .title p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .site-example-container .card-left,
+  .site-example-container .card-right {
+    padding: 10px;
+  }
+
+  .card-left h3 {
+    font-size: 18px;
+  }
+
+  .card-left p {
+    font-size: 12px;
+  }
+
+  .card-right h3 {
+    font-size: 13px;
+  }
+
+  .label {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+
+  .note {
+    font-size: 11px;
+    padding: 8px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+ 
+
+.recurring-income {
         width: 100%;
         height: 798px;
         background: linear-gradient(#F0FDF4, #ECFDF5);
@@ -829,6 +942,8 @@
         letter-spacing: 0%;
         line-height: 24px;
     }
+
+    /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
     :root{
