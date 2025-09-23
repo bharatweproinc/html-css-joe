@@ -1,0 +1,71 @@
+*, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 300px 0 300px;
+    z-index: 1000;
+    background: transparent;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-circle {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(#FFCC33, #FB9851);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0%;
+    background: linear-gradient(#FFCC33, #FB9851);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav > ul {
+    list-style: none; 
+    margin: 0;   
+    padding: 0;   
+}
+
+.nav > ul li {
+  display: inline;  
+  margin-right: 25px; 
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  color: #FFF9E6CC;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.get-free-quote > button {
+    width: 133px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(#FFCC33, #FB9851);
+    box-shadow: 0 5px 20px #FFCC3366;
+    border: none;
+}
