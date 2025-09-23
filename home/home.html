@@ -17,78 +17,98 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
+    <!-- Header -->
+    <header class="header container-fluid position-absolute top-0 start-0 z-3">
+        <div class="d-flex justify-content-between align-items-center py-2 px-xxl-5 px-lg-4 px-3">
+
+            <!-- Logo -->
+            <div class="logo d-flex align-items-center">
             <div class="logo-circle"></div>
-            <p class="logo-text">SolarPorts</p>
-        </div>
-        <div class="nav">
-            <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>About</li>
-                <li>Contact</li>
+            <p class="logo-text mb-0">SolarPorts</p>
+            </div>
+
+            <!-- Navbar -->
+            <nav class="d-none d-md-block">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link px-3">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-3">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-3">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-3">Contact</a></li>
             </ul>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="get-free-quote">
+            <button class="get-quote-btn">Get Free Quote</button>
+            </div>
         </div>
-        <div class="get-free-quote">
-            <button>Get Free Quote</button>
-        </div>
-    </div>
+    </header>
+
 
     <main class="content">
         <div class="banner">
-            <div class="banner-content">
-                <h1>Turn energy into income.</h1>
-                <h2>Onsite electricity to improve your business.</h2>
-                <p>Game changing commercial energy.<br>Turnkey simple. Built to scale.</p>
-                <div class="banner-buttons">
-                    <button class="primary-btn">Free Custom Report</button>
-                    <button class="secondary-btn">Free Expert Consultation</button>
+            <div class="h-100 banner-content d-flex flex-column justify-content-between align-items-center">
+                <div>
+                    <h1>Turn energy into income.</h1>
+                    <h2>Onsite electricity to improve your business.</h2>
+                    <p>Game changing commercial energy.<br>Turnkey simple. Built to scale.</p>
+                    <div class="banner-buttons">
+                        <button class="primary-btn">Free Custom Report</button>
+                        <button class="secondary-btn">Free Expert Consultation</button>
+                    </div>
+                    <div class="banner-features">
+                        <span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.66667 9.33334C2.54051 9.33377 2.41682 9.2984 2.30997 9.23133C2.20312 9.16426 2.11749 9.06824 2.06303 8.95445C2.00858 8.84065 1.98753 8.71373 2.00233 8.58845C2.01714 8.46316 2.06719 8.34465 2.14667 8.24667L8.74667 1.44667C8.79617 1.38953 8.86364 1.35091 8.93799 1.33716C9.01234 1.32341 9.08915 1.33535 9.15582 1.37101C9.22249 1.40667 9.27506 1.46394 9.30489 1.53341C9.33472 1.60289 9.34005 1.68044 9.32 1.75334L8.04 5.76667C8.00226 5.86769 7.98958 5.97635 8.00306 6.08334C8.01654 6.19034 8.05577 6.29246 8.11739 6.38096C8.17901 6.46946 8.26118 6.54168 8.35685 6.59145C8.45252 6.64121 8.55883 6.66702 8.66667 6.66667H13.3333C13.4595 6.66624 13.5832 6.70162 13.69 6.76869C13.7969 6.83576 13.8825 6.93177 13.937 7.04557C13.9914 7.15937 14.0125 7.28628 13.9977 7.41157C13.9829 7.53685 13.9328 7.65537 13.8533 7.75334L7.25333 14.5533C7.20383 14.6105 7.13636 14.6491 7.06201 14.6629C6.98766 14.6766 6.91085 14.6647 6.84418 14.629C6.77751 14.5933 6.72494 14.5361 6.69511 14.4666C6.66528 14.3971 6.65995 14.3196 6.68 14.2467L7.96 10.2333C7.99774 10.1323 8.01042 10.0237 7.99694 9.91667C7.98346 9.80968 7.94423 9.70755 7.88261 9.61906C7.82099 9.53056 7.73882 9.45833 7.64315 9.40857C7.54748 9.3588 7.44117 9.33299 7.33333 9.33334H2.66667Z"
+                                    stroke="#FFCC33" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="feature-text">Federal Tax Credits</div>
+                        </span>
+                        <span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6667 4.66669L9 10.3334L5.66667 7.00002L1.33334 11.3334" stroke="#FFCC33"
+                                    stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M10.6667 4.66669H14.6667V8.66669" stroke="#FFCC33" stroke-width="1.33333"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <div class="feature-text">30% Savings Guaranteed</div>
+                        </span>
+                        <span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.3333 8.66664C13.3333 12 11 13.6666 8.22667 14.6333C8.08145 14.6825 7.9237 14.6802 7.78001 14.6266C5.00001 13.6666 2.66667 12 2.66667 8.66664V3.99997C2.66667 3.82316 2.73691 3.65359 2.86193 3.52857C2.98696 3.40355 3.15653 3.33331 3.33334 3.33331C4.66667 3.33331 6.33334 2.53331 7.49334 1.51997C7.63457 1.39931 7.81424 1.33301 8.00001 1.33301C8.18577 1.33301 8.36544 1.39931 8.50667 1.51997C9.67334 2.53997 11.3333 3.33331 12.6667 3.33331C12.8435 3.33331 13.0131 3.40355 13.1381 3.52857C13.2631 3.65359 13.3333 3.82316 13.3333 3.99997V8.66664Z"
+                                    stroke="#FFCC33" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="feature-text">25-Year Warranty</div>
+                        </span>
+                        <span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.318 8.59332L11.328 14.2773C11.3393 14.3443 11.3299 14.413 11.3011 14.4745C11.2722 14.5359 11.2253 14.5871 11.1666 14.6212C11.1079 14.6553 11.0402 14.6706 10.9725 14.6651C10.9049 14.6597 10.8405 14.6337 10.788 14.5907L8.40132 12.7993C8.2861 12.7132 8.14614 12.6667 8.00232 12.6667C7.8585 12.6667 7.71854 12.7132 7.60332 12.7993L5.21265 14.59C5.1602 14.6329 5.0959 14.6589 5.02832 14.6644C4.96074 14.6698 4.8931 14.6545 4.83443 14.6206C4.77576 14.5866 4.72884 14.5355 4.69993 14.4742C4.67103 14.4129 4.66151 14.3442 4.67265 14.2773L5.68199 8.59332"
+                                    stroke="#FFCC33" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M8 9.33331C10.2091 9.33331 12 7.54245 12 5.33331C12 3.12417 10.2091 1.33331 8 1.33331C5.79086 1.33331 4 3.12417 4 5.33331C4 7.54245 5.79086 9.33331 8 9.33331Z"
+                                    stroke="#FFCC33" stroke-width="1.33333" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="feature-text">Industry Leader</div>
+                        </span>
+                    </div>
                 </div>
-                <div class="banner-features">
-                    <span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M2.66667 9.33334C2.54051 9.33377 2.41682 9.2984 2.30997 9.23133C2.20312 9.16426 2.11749 9.06824 2.06303 8.95445C2.00858 8.84065 1.98753 8.71373 2.00233 8.58845C2.01714 8.46316 2.06719 8.34465 2.14667 8.24667L8.74667 1.44667C8.79617 1.38953 8.86364 1.35091 8.93799 1.33716C9.01234 1.32341 9.08915 1.33535 9.15582 1.37101C9.22249 1.40667 9.27506 1.46394 9.30489 1.53341C9.33472 1.60289 9.34005 1.68044 9.32 1.75334L8.04 5.76667C8.00226 5.86769 7.98958 5.97635 8.00306 6.08334C8.01654 6.19034 8.05577 6.29246 8.11739 6.38096C8.17901 6.46946 8.26118 6.54168 8.35685 6.59145C8.45252 6.64121 8.55883 6.66702 8.66667 6.66667H13.3333C13.4595 6.66624 13.5832 6.70162 13.69 6.76869C13.7969 6.83576 13.8825 6.93177 13.937 7.04557C13.9914 7.15937 14.0125 7.28628 13.9977 7.41157C13.9829 7.53685 13.9328 7.65537 13.8533 7.75334L7.25333 14.5533C7.20383 14.6105 7.13636 14.6491 7.06201 14.6629C6.98766 14.6766 6.91085 14.6647 6.84418 14.629C6.77751 14.5933 6.72494 14.5361 6.69511 14.4666C6.66528 14.3971 6.65995 14.3196 6.68 14.2467L7.96 10.2333C7.99774 10.1323 8.01042 10.0237 7.99694 9.91667C7.98346 9.80968 7.94423 9.70755 7.88261 9.61906C7.82099 9.53056 7.73882 9.45833 7.64315 9.40857C7.54748 9.3588 7.44117 9.33299 7.33333 9.33334H2.66667Z"
-                                stroke="#FFCC33" stroke-width="1.33333" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="feature-text">Federal Tax Credits</div>
-                    </span>
-                    <span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.6667 4.66669L9 10.3334L5.66667 7.00002L1.33334 11.3334" stroke="#FFCC33"
-                                stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M10.6667 4.66669H14.6667V8.66669" stroke="#FFCC33" stroke-width="1.33333"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        <div class="feature-text">30% Savings Guaranteed</div>
-                    </span>
-                    <span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13.3333 8.66664C13.3333 12 11 13.6666 8.22667 14.6333C8.08145 14.6825 7.9237 14.6802 7.78001 14.6266C5.00001 13.6666 2.66667 12 2.66667 8.66664V3.99997C2.66667 3.82316 2.73691 3.65359 2.86193 3.52857C2.98696 3.40355 3.15653 3.33331 3.33334 3.33331C4.66667 3.33331 6.33334 2.53331 7.49334 1.51997C7.63457 1.39931 7.81424 1.33301 8.00001 1.33301C8.18577 1.33301 8.36544 1.39931 8.50667 1.51997C9.67334 2.53997 11.3333 3.33331 12.6667 3.33331C12.8435 3.33331 13.0131 3.40355 13.1381 3.52857C13.2631 3.65359 13.3333 3.82316 13.3333 3.99997V8.66664Z"
-                                stroke="#FFCC33" stroke-width="1.33333" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="feature-text">25-Year Warranty</div>
-                    </span>
-                    <span>
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.318 8.59332L11.328 14.2773C11.3393 14.3443 11.3299 14.413 11.3011 14.4745C11.2722 14.5359 11.2253 14.5871 11.1666 14.6212C11.1079 14.6553 11.0402 14.6706 10.9725 14.6651C10.9049 14.6597 10.8405 14.6337 10.788 14.5907L8.40132 12.7993C8.2861 12.7132 8.14614 12.6667 8.00232 12.6667C7.8585 12.6667 7.71854 12.7132 7.60332 12.7993L5.21265 14.59C5.1602 14.6329 5.0959 14.6589 5.02832 14.6644C4.96074 14.6698 4.8931 14.6545 4.83443 14.6206C4.77576 14.5866 4.72884 14.5355 4.69993 14.4742C4.67103 14.4129 4.66151 14.3442 4.67265 14.2773L5.68199 8.59332"
-                                stroke="#FFCC33" stroke-width="1.33333" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M8 9.33331C10.2091 9.33331 12 7.54245 12 5.33331C12 3.12417 10.2091 1.33331 8 1.33331C5.79086 1.33331 4 3.12417 4 5.33331C4 7.54245 5.79086 9.33331 8 9.33331Z"
-                                stroke="#FFCC33" stroke-width="1.33333" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="feature-text">Industry Leader</div>
-                    </span>
+                <div class="float-y my-lg-5 mt-md-5">
+                    <svg width="24" height="40" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="1" y="1" width="22" height="38" rx="11" stroke="#FFCC33" stroke-opacity="0.5" stroke-width="2"/>
+                        <rect x="10" y="10" width="4" height="12" rx="2" fill="#FFCC33"/>
+                    </svg>
                 </div>
             </div>
         </div>
+
+
         <div class="problem-section">
             <div class="problem-head">
                 <h1>
