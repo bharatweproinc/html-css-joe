@@ -995,7 +995,7 @@
       --shadow: 0 18px 28px rgba(10,14,20,.26);
 
 
-      --bg:#F2F6F4;            /* page background tint */
+      --bg:linear-gradient(#F8FAFC, #F9FAFB);            /* page background tint */
       --panel:#141A20;         /* dark card */
       --panel-muted:#1C232B;
       --panel-border: rgba(255,255,255,.06);
@@ -1368,9 +1368,9 @@
 
 
 
-   .section-wrap{ 
+   .section-wrap-1{ 
         padding:72px 0;
-        background: linear-gradient(180deg,#f7f8fb 0%,#eef0f7 100%);
+        background: linear-gradient(180deg,#EEF2FF,#FAF5FF);
     }
  
     .title-1{
@@ -1597,12 +1597,11 @@
 
 
 
-    body{
-      background:#fdf6f3;
-      font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-      color:#0E151B;
-    }
-    .wrap-x{ padding:72px 0 96px; }
+    .wrap-x{ 
+        padding:72px 0 96px;
+        background:linear-gradient(#FEF2F2, #FFF7ED);
+        color:#0E151B;
+     }
 
     .title-x{
       text-align:center;
@@ -1745,7 +1744,7 @@
 
 
 .bg-linear-from-EFF6FF-to-EEF2FF {
-                background-color: linear-gradient(180deg, #EFF6FF, #EEF2FF);
+                background: linear-gradient(180deg, #EFF6FF, #EEF2FF);
             }
 
 .timeline {
