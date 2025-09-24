@@ -5,7 +5,7 @@ body {
 }
 
 .report-progress-container {
-    background: #18212a;
+    background: linear-gradient(#14181f, #19222a);
     color: #fff;
     padding-bottom: 3rem;
     margin-top: 0; /* ensure section starts at top */
@@ -298,3 +298,86 @@ padding-top: 2rem; /* optional: add controlled padding */
 .circle-completed {
     background-color: #FFCC33;
 }
+
+
+/* Thank You Title */
+.report-progress-container #rightSubtitle h1 {
+  font-size: 24px;
+  /* color: #facc15; */
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ 
+/* Thank You Subtext */
+.report-progress-container #rightSubtitle p {
+  /* font-size: 14px; */
+  /* color: #cbd5e0; */
+  margin: 0 auto 10px;
+  max-width: 90%;
+}
+ 
+/* "What happens next?" Section */
+.report-progress-container .next-steps {
+  /* background-color: #1e212b; */
+  border: 1px solid #363D49;
+  box-shadow: 0px 1px 2px 0 #0000000D !important;
+  /* box-shadow: 0px 1px 2px 0 #0000000D; */
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+ 
+/* What happens next? title */
+.report-progress-container .next-steps h2 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color:#fdf4d8
+}
+ 
+/* Individual steps */
+.report-progress-container .step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+ 
+}
+ 
+/* Number circle */
+.report-progress-container .step-number {
+  background-color: #2f2e26;
+  color: #f2c232;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+ 
+/* Step text */
+.report-progress-container .step-text {
+  font-size: 0.80rem;
+  color: #d2cbb6;
+}
+ 
+/* Ensure clean layout in final step */
+.report-progress-container #rightSubtitle,
+.report-progress-container #rightContent {
+  text-align: center;
+}
+.report-progress-container #rightTitle {
+  display: flex;
+  justify-content: center;
+}
+ 
+.report-progress-container #rightContent h2 {
+  text-align: left;
+}
+.custom-size {
+    font-size: 0.90rem; /* your custom size */
+    margin-bottom: 0px;
+  }
