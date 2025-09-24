@@ -295,3 +295,6 @@ padding-top: 2rem; /* optional: add controlled padding */
 .slider-scale span:nth-child(10) { left: 89%; transform: translateX(-50%); }
 .slider-scale span:nth-child(11) { left: 100%; transform: translateX(-100%); } /* last label */
 
+.circle-completed {
+    background-color: #FFCC33;
+}
