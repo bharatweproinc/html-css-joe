@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const stepData = {
     1: {
       title: "Locate your property",
-      subtitle: "No Property Selected Yet",
-      content: `<img src="https://via.placeholder.com/600x300" class="img-fluid rounded" alt="Map">`
+      subtitle: `<p id="status"></p>`,
+      content: `<div id="map" style="height:300px; border-radius:8px;"></div>`
     },
     2: {
       title: "Energy identification",
@@ -61,8 +61,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Update right section
     rightTitle.innerText = stepData[currentStep].title;
-    rightSubtitle.innerText = stepData[currentStep].subtitle;
+    rightSubtitle.innerHTML = stepData[currentStep].subtitle;
     rightContent.innerHTML = stepData[currentStep].content;
+
+    if (currentStep === 1) {
+        initMap();
+    }
 
     // Button states
     prevBtn.disabled = currentStep === 1;
@@ -91,3 +95,65 @@ document.addEventListener("DOMContentLoaded", () => {
 
   updateStep();
 });
+
+
+function initMap() {
+  const map = L.map('map');
+
+  // Add tile layer
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap contributors',
+  }).addTo(map);
+
+  let marker;
+
+  // Try to locate the user
+  map.locate({ setView: true, maxZoom: 16 });
+
+  // When location is found
+  map.on('locationfound', function (e) {
+    const { lat, lng } = e.latlng;
+
+    // Add marker at user's location
+    marker = L.marker([lat, lng]).addTo(map);
+    document.getElementById('status').textContent = `No Property Selected Yet`; 
+    // Fetch address
+    fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`)
+      .then(response => response.json())
+      .then(data => {
+        const address = data.display_name || "Address not found";
+        document.getElementById('status').textContent = `📍 ${address}`;
+      })
+      .catch(err => {
+        console.error(err);
+        document.getElementById('status').textContent = `Error fetching address`;
+      });
+  });
+
+  // If location not found or denied
+  map.on('locationerror', function () {
+    document.getElementById('status').textContent = "⚠️ Location access denied. Please click the map.";
+    map.setView([37.7749, -122.4194], 16); // fallback (San Francisco)
+  });
+
+  // Allow manual map click as backup
+  map.on('click', function (e) {
+    const { lat, lng } = e.latlng;
+
+    if (!marker) {
+      marker = L.marker([lat, lng]).addTo(map);
+    } else {
+      marker.setLatLng([lat, lng]);
+    }
+
+    fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`)
+      .then(response => response.json())
+      .then(data => {
+        const address = data.display_name || "Address not found";
+        document.getElementById('status').textContent = `📍 ${address}`;
+      })
+      .catch(() => {
+        document.getElementById('status').textContent = `Error fetching address`;
+      });
+  });
+}
