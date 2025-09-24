@@ -190,3 +190,45 @@ padding-top: 2rem; /* optional: add controlled padding */
   /* margin-top: 1rem; */
   margin-bottom: 0px;
 }
+
+
+/* === Right Box Styling (matches screenshot) === */
+.onsite-energy-box {
+  text-align: left;
+  color: #fff;
+}
+
+.onsite-energy-box h5 {
+  font-size: 1.25rem;
+  color: #facc15; /* Yellow heading */
+}
+
+.onsite-energy-box p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.onsite-energy-box .highlight-text {
+  color: #facc15;
+  font-weight: 600;
+}
+
+.custom-input {
+  background-color: #111827;
+  border: 1px solid #363D49;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  padding: 0.6rem;
+}
+
+.custom-input::placeholder {
+  color: #9ca3af;
+}
+
+.custom-input:focus {
+  border-color: #facc15;
+  box-shadow: 0 0 0 0.2rem rgba(250, 204, 21, 0.25);
+}
+
+/* === Right Box New Styling End === */

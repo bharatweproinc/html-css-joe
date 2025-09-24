@@ -63,15 +63,29 @@ document.addEventListener("DOMContentLoaded", () => {
                     </p>`
     },
     3: {
-      title: "Complete",
-      subtitle: "Review and submit your request.",
+      title: "An onsite energy system at",
+      subtitle: "with 210 solar panels will generate about $96,000 in annual income and improve your property value by $1,900,000 using a 5% cap rate.",
       content: `
-        <p class="mb-3">Please confirm your details before submitting:</p>
-        <ul>
-          <li>Location: Selected</li>
-          <li>Energy Usage: Entered</li>
-        </ul>
-        <button class="btn btn-success w-100">Submit Request</button>`
+        <p class="text-light">We’ll send your free Property Energy Report to:</p>
+        <div class="row g-3 mb-3">
+            <div class="col-md-4">
+            <input type="text" class="form-control custom-input" placeholder="Your Name">
+            </div>
+            <div class="col-md-4">
+            <input type="email" class="form-control custom-input" placeholder="Email">
+            </div>
+            <div class="col-md-4">
+            <input type="text" class="form-control custom-input" placeholder="Phone">
+            </div>
+        </div>
+
+        <!-- Recaptcha -->
+        <div class="mb-3">
+            <div class="bg-dark d-inline-block p-2 rounded">
+            <input type="checkbox" id="recaptcha">
+            <label for="recaptcha" class="text-light">I'm not a robot</label>
+            </div>
+        </div>`
     }
   };
 
