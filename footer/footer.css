@@ -103,3 +103,65 @@
     letter-spacing: 0%;
     color: #FFF9E699;
 }
+.logo {
+    display: flex;
+}
+
+
+@media (max-width: 991.98px) {
+  .footer .top {
+    text-align: center;
+  }
+
+  .footer .logo {
+    justify-content: center;
+  }
+
+  .description {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 0;
+  }
+
+  .social {
+    justify-content: center;
+    margin-block: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  .services,
+  .company {
+    margin: 0;
+    text-align: center;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .unordered-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .unordered-list > li {
+    display: inline;
+    font-size: 14px;
+    color: #FFF9E699;
+  }
+}
