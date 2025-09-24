@@ -232,3 +232,7 @@ padding-top: 2rem; /* optional: add controlled padding */
 }
 
 /* === Right Box New Styling End === */
+
+.circle-completed {
+    background-color: #FFCC33;
+}

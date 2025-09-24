@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let currentStep = 1;
+  let currentStep = 0;
   const totalSteps = 3;
 
   const progressBar = document.getElementById("progressBar");
@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Step contents for right section
   const stepData = {
-    1: {
+    0: {
       title: "Locate your property",
-      subtitle: `<p id="status"></p>`,
+      subtitle: ``,
       content: `<p class="text-custom-yellow">Select Location*</p><div id="map" style="height:300px; border-radius:8px;"></div>`
     },
-    2: {
+    1: {
       title: "Energy identification",
       subtitle: "Based on your answers, you'll need about 210 solar panels to maximize your energy investment.",
       content: `
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         shade for your visitors, and show customers you’re eco friendly.
                     </p>`
     },
-    3: {
+    2: {
       title: "An onsite energy system at",
       subtitle: "with 210 solar panels will generate about $96,000 in annual income and improve your property value by $1,900,000 using a 5% cap rate.",
       content: `
@@ -94,31 +94,48 @@ document.addEventListener("DOMContentLoaded", () => {
     progressBar.style.width = `${(currentStep / totalSteps) * 100}%`;
 
     // Update active step circles
-    stepCircles.forEach(circle => {
+    stepCircles.forEach((circle,i) => {
       const stepWrapper = circle.closest(".energy-progress-step"); // parent div
-      const stepNum = parseInt(circle.textContent.trim());
-      console.log(stepNum, currentStep);
-      if (stepNum === currentStep) {
+      const stepInnerContent = parseInt(circle.textContent.trim());
+      const stepNum = isNaN(stepInnerContent) ? "icon" : stepInnerContent;
+      console.log(":::", stepNum, currentStep);
+      if (stepNum === currentStep+1) {
         circle.classList.add("energy-step-circle-active");
         stepWrapper.classList.add("active");
-      } else {
+        stepCircles[currentStep-1].classList.add("circle-completed")
+        stepCircles[currentStep-1].innerHTML = `<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.5341 6.66666C14.8385 8.16086 14.6215 9.71428 13.9193 11.0679C13.2171 12.4214 12.072 13.4934 10.6751 14.1049C9.27816 14.7164 7.71382 14.8305 6.24293 14.4282C4.77205 14.026 3.48353 13.1316 2.59225 11.8943C1.70097 10.657 1.26081 9.15148 1.34518 7.62892C1.42954 6.10635 2.03332 4.65872 3.05583 3.52744C4.07835 2.39616 5.45779 1.64961 6.96411 1.4123C8.47043 1.17498 10.0126 1.46123 11.3334 2.22333" stroke="#0F131A" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M6 7.33341L8 9.33341L14.6667 2.66675" stroke="#0F131A" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        `
+      }else {
         circle.classList.remove("energy-step-circle-active");
         stepWrapper.classList.remove("active");
+        if(i+1 > currentStep){
+          circle.classList.remove("circle-completed")
+          circle.innerHTML = i+1
+        }
       }
     });
 
 
     // Update right section
+    console.log("CurrentStep", currentStep);
+    
     rightTitle.innerText = stepData[currentStep].title;
     rightSubtitle.innerHTML = stepData[currentStep].subtitle;
     rightContent.innerHTML = stepData[currentStep].content;
 
-    if (currentStep === 1) {
+    if (currentStep === 0) {
         initMap();
+    } else if(currentStep === 2) {
+      document.getElementById('status').classList.remove("d-none")
+    } else {
+      document.getElementById('status').classList.add("d-none")
     }
 
     // Button states
-    prevBtn.disabled = currentStep === 1;
+    prevBtn.disabled = currentStep === 0;
     nextBtn.innerHTML =
       currentStep === totalSteps
         ? `Finish <i class="bi bi-check2"></i>`
@@ -127,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Button events
   prevBtn.addEventListener("click", () => {
-    if (currentStep > 1) {
+    if (currentStep > 0) {
       currentStep--;
       updateStep();
     }
