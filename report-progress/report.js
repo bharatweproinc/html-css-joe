@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const totalSteps = 3;
 
   const progressBar = document.getElementById("progressBar");
-  const stepCircles = document.querySelectorAll(".step-circle");
+  const stepCircles = document.querySelectorAll(".energy-step-circle");
   const prevBtn = document.getElementById("prevBtn");
   const nextBtn = document.getElementById("nextBtn");
 
@@ -46,11 +46,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Update active step circles
     stepCircles.forEach(circle => {
-      circle.classList.remove("active");
-      if (parseInt(circle.dataset.step) === currentStep) {
-        circle.classList.add("active");
+      const stepWrapper = circle.closest(".energy-progress-step"); // parent div
+      const stepNum = parseInt(circle.textContent.trim());
+      console.log(stepNum, currentStep);
+      if (stepNum === currentStep) {
+        circle.classList.add("energy-step-circle-active");
+        stepWrapper.classList.add("active");
+      } else {
+        circle.classList.remove("energy-step-circle-active");
+        stepWrapper.classList.remove("active");
       }
     });
+
 
     // Update right section
     rightTitle.innerText = stepData[currentStep].title;
@@ -78,10 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
       currentStep++;
       updateStep();
     } else {
-      alert("Form submitted! 🚀");
+      alert("Form submitted!");
     }
   });
 
-  // Initialize first step
   updateStep();
 });
