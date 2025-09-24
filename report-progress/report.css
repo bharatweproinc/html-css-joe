@@ -1,0 +1,143 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0; /* remove default browser margin */
+    padding: 0;
+}
+
+.report-progress-container {
+    background: #18212a;
+    color: #fff;
+    padding-bottom: 3rem;
+    margin-top: 0; /* ensure section starts at top */
+}
+
+.report-progress-container .text-custom-yellow {
+    color: #FDF4D8;
+}
+
+.report-progress-container .text-custom-yellow-2 {
+    color: #C9BE9C;
+}
+
+
+.report-progress-container .text-center {
+margin-top: 0 !important; /* override Bootstrap mt-5 */
+padding-top: 2rem; /* optional: add controlled padding */
+}
+
+/* Hero Section */
+.report-progress-container .energy-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #FFCC33, #FB9851); /* yellow → amber */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* for Firefox */
+    color: transparent;
+}
+
+.report-progress-container .energy-hero-subtitle {
+    color: #C9BE9C;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Container */
+.report-progress-container .energy-report-container {
+    margin-top: 3rem;
+}
+
+.report-progress-container .energy-card {
+    border-radius: 10px;
+    padding: 2rem;
+    height: 100%;
+    border: 1px solid #363D49;
+    background-color: #181D25;
+    box-shadow: 0px 1px 2px 0 #0000000D;
+}
+
+/* Progress Section */
+.report-progress-container .energy-progress-step {
+    color: #C9BE9C;
+    font-size: 0.95rem;
+}
+
+.report-progress-container .energy-progress-step.active {
+    color: #FFF9E6;
+    font-weight: 600;
+}
+
+.report-progress-container .energy-progress-step.active small {
+    color: #C9BE9C
+}
+
+.report-progress-container .energy-step-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #6b7280;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color:#6b7280;
+}
+
+.report-progress-container .energy-step-circle-active {
+        color: #facc15;
+        border: 2px solid #facc15;
+}
+
+.report-progress-container .energy-progress-bar {
+    height: 10px;
+    background-color: #1f2937;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.report-progress-container .energy-progress-fill {
+    height: 10px;
+    width: 33%; /* Step 1 of 3 */
+    background-color: #facc15;
+    border-radius: 5px;
+}
+
+/* Map Section */
+.report-progress-container .energy-map-box {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.report-progress-container .energy-map-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Buttons */
+.report-progress-container .energy-btn {
+    border-radius: 6px;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+}
+
+.report-progress-container .energy-btn-prev {
+    background: #1f2937;
+    color: #fff;
+    border: none;
+}
+
+.report-progress-container .energy-btn-next {
+    background: #FFCC33;
+    color: #111827;
+    border: none;
+}
+
+.report-progress-container .energy-btn-prev:hover,
+.report-progress-container .energy-btn-next:hover {
+    opacity: 0.9;
+}

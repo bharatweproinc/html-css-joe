@@ -10,152 +10,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    body {
-        font-family: 'Inter', sans-serif;
-        margin: 0; /* remove default browser margin */
-        padding: 0;
-    }
-
-    .report-progress-container {
-       background: #18212a;
-        color: #fff;
-        padding-bottom: 3rem;
-        margin-top: 0; /* ensure section starts at top */
-    }
-
-    .report-progress-container .text-custom-yellow {
-        color: #FDF4D8;
-    }
-
-    .report-progress-container .text-custom-yellow-2 {
-        color: #C9BE9C;
-    }
-
-    
-    .report-progress-container .text-center {
-    margin-top: 0 !important; /* override Bootstrap mt-5 */
-    padding-top: 2rem; /* optional: add controlled padding */
-    }
-
-    /* Hero Section */
-    .report-progress-container .energy-hero-title {
-        font-size: 3rem;
-        font-weight: 700;
-        background: linear-gradient(to right, #FFCC33, #FB9851); /* yellow → amber */
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text; /* for Firefox */
-        color: transparent;
-    }
-
-    .report-progress-container .energy-hero-subtitle {
-      color: #C9BE9C;
-      font-size: 1rem;
-      margin-top: 0.5rem;
-    }
-
-    /* Container */
-    .report-progress-container .energy-report-container {
-      margin-top: 3rem;
-    }
-
-    .report-progress-container .energy-card {
-      border-radius: 10px;
-      padding: 2rem;
-      height: 100%;
-      border: 1px solid #363D49;
-      background-color: #181D25;
-      box-shadow: 0px 1px 2px 0 #0000000D;
-    }
-
-    /* Progress Section */
-    .report-progress-container .energy-progress-step {
-      color: #C9BE9C;
-      font-size: 0.95rem;
-    }
-
-    .report-progress-container .energy-progress-step.active {
-      color: #FFF9E6;
-      font-weight: 600;
-    }
-
-    .report-progress-container .energy-progress-step.active small {
-        color: #C9BE9C
-    }
-
-    .report-progress-container .energy-step-circle {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      border: 2px solid #6b7280;
-      font-size: 0.85rem;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 10px;
-      color:#6b7280;
-    }
-
-    .report-progress-container .energy-step-circle-active {
-         color: #facc15;
-         border: 2px solid #facc15;
-    }
-
-    .report-progress-container .energy-progress-bar {
-      height: 10px;
-      background-color: #1f2937;
-      border-radius: 5px;
-      margin-bottom: 1.5rem;
-    }
-
-    .report-progress-container .energy-progress-fill {
-      height: 10px;
-      width: 33%; /* Step 1 of 3 */
-      background-color: #facc15;
-      border-radius: 5px;
-    }
-
-    /* Map Section */
-    .report-progress-container .energy-map-box {
-      width: 100%;
-      height: 250px;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
-    .report-progress-container .energy-map-box img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    /* Buttons */
-    .report-progress-container .energy-btn {
-      border-radius: 6px;
-      padding: 0.6rem 1.5rem;
-      font-weight: 600;
-    }
-
-    .report-progress-container .energy-btn-prev {
-      background: #1f2937;
-      color: #fff;
-      border: none;
-    }
-
-    .report-progress-container .energy-btn-next {
-      background: #FFCC33;
-      color: #111827;
-      border: none;
-    }
-
-    .report-progress-container .energy-btn-prev:hover,
-    .report-progress-container .energy-btn-next:hover {
-      opacity: 0.9;
-    }
-  </style>
+  <link href="./report.css" rel="stylesheet">
+  <script src="./report.js" defer></script>
 </head>
 <body>
     <!-- Header -->
@@ -184,150 +40,142 @@
             </div>
         </div>
     </header>
-    
-  <section class="report-progress-container pt-5">
-    <!-- Hero Text -->
-    <div class="text-center">
-        <h1 class="energy-hero-title">Turn energy into income</h1>
-        <p class="energy-hero-subtitle">
-            Complete our 3-step process to receive a personalized solar quote tailored to<br>
-            your energy needs and business requirements.
-        </p>
-    </div>
-
-    <!-- Report Container -->
-    <div class="container energy-report-container">
-        <div class="row g-4">
-        
-        <!-- Left Card -->
-        <div class="col-lg-5">
-            <div class="energy-card">
-            <h6 class="mb-2">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3.33325 11.6667C3.17555 11.6672 3.02094 11.623 2.88737 11.5391C2.75381 11.4553 2.64677 11.3353 2.5787 11.193C2.51063 11.0508 2.48432 10.8921 2.50283 10.7355C2.52133 10.5789 2.5839 10.4308 2.68325 10.3083L10.9332 1.80833C10.9951 1.73689 11.0795 1.68862 11.1724 1.67144C11.2653 1.65425 11.3613 1.66917 11.4447 1.71375C11.528 1.75832 11.5937 1.82991 11.631 1.91675C11.6683 2.00359 11.675 2.10053 11.6499 2.19166L10.0499 7.20833C10.0027 7.3346 9.98689 7.47043 10.0037 7.60417C10.0206 7.7379 10.0696 7.86556 10.1467 7.97618C10.2237 8.0868 10.3264 8.17709 10.446 8.23929C10.5656 8.3015 10.6984 8.33377 10.8332 8.33333H16.6666C16.8243 8.33279 16.9789 8.37701 17.1124 8.46084C17.246 8.54468 17.3531 8.6647 17.4211 8.80695C17.4892 8.94919 17.5155 9.10784 17.497 9.26444C17.4785 9.42105 17.4159 9.56919 17.3166 9.69166L9.06658 18.1917C9.00469 18.2631 8.92036 18.3114 8.82743 18.3285C8.73449 18.3457 8.63848 18.3308 8.55514 18.2862C8.4718 18.2417 8.40609 18.1701 8.3688 18.0832C8.33151 17.9964 8.32485 17.8995 8.34991 17.8083L9.94991 12.7917C9.99709 12.6654 10.0129 12.5296 9.99609 12.3958C9.97924 12.2621 9.9302 12.1344 9.85317 12.0238C9.77614 11.9132 9.67343 11.8229 9.55385 11.7607C9.43426 11.6985 9.30137 11.6662 9.16658 11.6667H3.33325Z" stroke="#FFCC33" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-
-                Property Energy Report Progress
-            </h6>
-            <p class="text-secondary mb-2">Step 1 of 3</p>
-
-            <!-- Progress Bar -->
-            <div class="energy-progress-bar">
-                <div class="energy-progress-fill"></div>
-            </div>
-
-            <!-- Steps -->
-            <div class="d-flex align-items-center mb-3 energy-progress-step active">
-                <div class="energy-step-circle energy-step-circle-active">1</div>
-                <div>
-                <strong>Site identification</strong><br>
-                <small class="">Locate one sample location.</small>
-                </div>
-            </div>
-
-            <div class="d-flex align-items-center mb-3 energy-progress-step">
-                <div class="energy-step-circle">2</div>
-                <div>
-                Energy identification<br>
-                <small class="">Estimate your electric usage.</small>
-                </div>
-            </div>
-
-            <div class="d-flex align-items-center energy-progress-step">
-                <div class="energy-step-circle">3</div>
-                <div>
-                Complete<br>
-                <small class="">Submit your request.</small>
-                </div>
-            </div>
-            </div>
+    <section class="report-progress-container pt-5">
+        <!-- Hero Text -->
+        <div class="text-center">
+            <h1 class="energy-hero-title">Turn energy into income</h1>
+            <p class="energy-hero-subtitle">
+                Complete our 3-step process to receive a personalized solar quote tailored to<br>
+                your energy needs and business requirements.
+            </p>
         </div>
 
-        <!-- Right Card -->
-        <div class="col-lg-7">
-            <div class="energy-card">
-            <h5 class="fw-bold text-center pt-0 text-custom-yellow">Locate your property</h5>
-            <p class="text-center pt-0 text-custom-yellow-2">No Property Selected Yet</p>
-
-            <!-- Map -->
-             <p class="text-custom-yellow">Select Location*</p>
-            <div class="energy-map-box mb-4">
-                <img src="https://i.ibb.co/SVZcCBt/sample-map.png" alt="Map">
-            </div>
-
-            <hr>
-            <!-- Buttons -->
-            <div class="d-flex justify-content-between ">
-                <button class="btn energy-btn energy-btn-prev">← Previous</button>
-                <button class="btn energy-btn energy-btn-next">Next →</button>
-            </div>
-            </div>
-        </div>
-
-        </div>
-    </div>
-  </section>
-
-  <div class="footer pt-5">
-        <div class="container">
-            <div class="top">
-                <div class="row">
-                    <div class="col-lg-6 col-sm-12 mb-2">
-                        <div class="logo">
-                            <div class="logo-circle"></div>
-                            <p class="logo-text">SolarPorts</p>
-                        </div>
-                        <p class="description">
-                            Empowering businesses with clean, affordable solar
-                            energy solutions. Eliminate your electricity bills and join the
-                            renewable energy revolution.
-                        </p>
-                        <div class="social">
-                            <div class="social-icon">f</div>
-                            <div class="social-icon">t</div>
-                            <div class="social-icon">in</div>
-                        </div>
-                    </div>
-                    <div class="nav-links col-lg-6 col-sm-12 mb-2">
-                        <div class="services">
-                            <p class="heading-text">Services</p>
-                            <ul class="footer-nav-list">
-                                <li>Solar Analysis</li>
-                                <li>System Design</li>
-                                <li>Installation</li>
-                                <li>Maintenance</li>
-                                <li>Financing</li>
-                            </ul>
-                        </div>
-                        <div class="company">
-                            <p class="heading-text">Company</p>
-                            <ul class="footer-nav-list">
-                                <li>About Us</li>
-                                <li>Careers</li>
-                                <li>Partners</li>
-                                <li>Contact</li>
-                                <li>Support</li>
-                            </ul>
-                        </div>
-                    </div>
+        <!-- Report Container -->
+        <div class="container energy-report-container">
+            <div class="row g-4">
+            
+            <!-- Left Card -->
+            <div class="col-lg-5">
+                <div class="energy-card">
+                <h6 class="mb-2">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.33325 11.6667C3.17555 11.6672 3.02094 11.623 2.88737 11.5391C2.75381 11.4553 2.64677 11.3353 2.5787 11.193C2.51063 11.0508 2.48432 10.8921 2.50283 10.7355C2.52133 10.5789 2.5839 10.4308 2.68325 10.3083L10.9332 1.80833C10.9951 1.73689 11.0795 1.68862 11.1724 1.67144C11.2653 1.65425 11.3613 1.66917 11.4447 1.71375C11.528 1.75832 11.5937 1.82991 11.631 1.91675C11.6683 2.00359 11.675 2.10053 11.6499 2.19166L10.0499 7.20833C10.0027 7.3346 9.98689 7.47043 10.0037 7.60417C10.0206 7.7379 10.0696 7.86556 10.1467 7.97618C10.2237 8.0868 10.3264 8.17709 10.446 8.23929C10.5656 8.3015 10.6984 8.33377 10.8332 8.33333H16.6666C16.8243 8.33279 16.9789 8.37701 17.1124 8.46084C17.246 8.54468 17.3531 8.6647 17.4211 8.80695C17.4892 8.94919 17.5155 9.10784 17.497 9.26444C17.4785 9.42105 17.4159 9.56919 17.3166 9.69166L9.06658 18.1917C9.00469 18.2631 8.92036 18.3114 8.82743 18.3285C8.73449 18.3457 8.63848 18.3308 8.55514 18.2862C8.4718 18.2417 8.40609 18.1701 8.3688 18.0832C8.33151 17.9964 8.32485 17.8995 8.34991 17.8083L9.94991 12.7917C9.99709 12.6654 10.0129 12.5296 9.99609 12.3958C9.97924 12.2621 9.9302 12.1344 9.85317 12.0238C9.77614 11.9132 9.67343 11.8229 9.55385 11.7607C9.43426 11.6985 9.30137 11.6662 9.16658 11.6667H3.33325Z" stroke="#FFCC33" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Property Energy Report Progress
+                </h6>
+                <p class="text-secondary mb-2">Step 1 of 3</p>
+                <div class="progress mb-4" style="height: 8px;">
+                    <div id="progressBar" class="progress-bar bg-warning" style="width: 33%;"></div>
                 </div>
-            </div>
-            <div class="bottom">
-                <div class="d-flex w-100 justify-content-between flex-wrap justify-content-sm-center">
-                    <div class="copyright mb-sm-2">
-                        © 2024 SolarPorts. All rights reserved.
-                    </div>
+                <!-- Steps -->
+                <div class="d-flex align-items-center mb-3 energy-progress-step active">
+                    <div class="energy-step-circle energy-step-circle-active">1</div>
                     <div>
-                        <ul class="unordered-list mb-sm-2">
-                            <li>Privacy Policy</li>
-                            <li>Terms of Service</li>
-                            <li>Cookie Policy</li>
-                        </ul>
+                    Site identification<br>
+                    <small class="">Locate one sample location.</small>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center mb-3 energy-progress-step">
+                    <div class="energy-step-circle">2</div>
+                    <div>
+                    Energy identification<br>
+                    <small class="">Estimate your electric usage.</small>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center energy-progress-step">
+                    <div class="energy-step-circle">3</div>
+                    <div>
+                    Complete<br>
+                    <small class="">Submit your request.</small>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Right Card -->
+            <div class="col-lg-7">
+                <div class="energy-card">
+                <h5 id="rightTitle" class="fw-bold text-center pt-0 text-custom-yellow">Locate your property</h5>
+                <p id="rightSubtitle" class="text-center pt-0 text-custom-yellow-2">No Property Selected Yet</p>
+
+                <!-- Map -->
+                <p class="text-custom-yellow">Select Location*</p>
+                <div class="energy-map-box mb-4" id="rightContent">
+                    <img src="https://i.ibb.co/SVZcCBt/sample-map.png" alt="Map">
+                </div>
+
+                <hr>
+                <!-- Buttons -->
+                <div class="d-flex justify-content-between ">
+                    <button id="prevBtn" class="btn energy-btn energy-btn-prev">← Previous</button>
+                    <button  id="nextBtn" class="btn energy-btn energy-btn-next">Next →</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer pt-5">
+            <div class="container">
+                <div class="top">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 mb-2">
+                            <div class="logo">
+                                <div class="logo-circle"></div>
+                                <p class="logo-text">SolarPorts</p>
+                            </div>
+                            <p class="description">
+                                Empowering businesses with clean, affordable solar
+                                energy solutions. Eliminate your electricity bills and join the
+                                renewable energy revolution.
+                            </p>
+                            <div class="social">
+                                <div class="social-icon">f</div>
+                                <div class="social-icon">t</div>
+                                <div class="social-icon">in</div>
+                            </div>
+                        </div>
+                        <div class="nav-links col-lg-6 col-sm-12 mb-2">
+                            <div class="services">
+                                <p class="heading-text">Services</p>
+                                <ul class="footer-nav-list">
+                                    <li>Solar Analysis</li>
+                                    <li>System Design</li>
+                                    <li>Installation</li>
+                                    <li>Maintenance</li>
+                                    <li>Financing</li>
+                                </ul>
+                            </div>
+                            <div class="company">
+                                <p class="heading-text">Company</p>
+                                <ul class="footer-nav-list">
+                                    <li>About Us</li>
+                                    <li>Careers</li>
+                                    <li>Partners</li>
+                                    <li>Contact</li>
+                                    <li>Support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="d-flex w-100 justify-content-between flex-wrap justify-content-sm-center">
+                        <div class="copyright mb-sm-2">
+                            © 2024 SolarPorts. All rights reserved.
+                        </div>
+                        <div>
+                            <ul class="unordered-list mb-sm-2">
+                                <li>Privacy Policy</li>
+                                <li>Terms of Service</li>
+                                <li>Cookie Policy</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
-
 </body>
 </html>
