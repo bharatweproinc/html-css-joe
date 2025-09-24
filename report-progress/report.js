@@ -16,16 +16,51 @@ document.addEventListener("DOMContentLoaded", () => {
     1: {
       title: "Locate your property",
       subtitle: `<p id="status"></p>`,
-      content: `<div id="map" style="height:300px; border-radius:8px;"></div>`
+      content: `<p class="text-custom-yellow">Select Location*</p><div id="map" style="height:300px; border-radius:8px;"></div>`
     },
     2: {
       title: "Energy identification",
-      subtitle: "Provide your estimated energy usage.",
+      subtitle: "Based on your answers, you'll need about 210 solar panels to maximize your energy investment.",
       content: `
-        <div class="form-group mb-3">
-          <label for="usage" class="form-label">Estimated Monthly Usage (kWh)</label>
-          <input type="number" id="usage" class="form-control" placeholder="Enter usage">
-        </div>`
+        <div class="mb-4">
+                        <label class="form-label text-identification-label">Who provides your electricity?</label>
+                        <select class="form-select custom-select-identification">
+                            <option>PG&E (Pacific Gas & Electric)</option>
+                            <option>Southern California Edison</option>
+                            <option>San Diego Gas & Electric</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Slider -->
+                    <div class="mb-4">
+                        <label class="form-label text-identification-label">
+                            How much is your estimated monthly electric bill?
+                            <br><small class="text-identification-hint">(Just guess for now, we’ll get the actual amount later.)</small>
+                        </label>
+
+                        <!-- Custom slider -->
+                        <input type="range" min="0" max="50000" step="5000" value="15000" class="form-range custom-slider">
+                        <div class="d-flex justify-content-between text-identification-scale">
+                            <span>$0</span>
+                            <span>$5,000</span>
+                            <span>$10,000</span>
+                            <span>$15,000</span>
+                            <span>$20,000</span>
+                            <span>$25,000</span>
+                            <span>$30,000</span>
+                            <span>$35,000</span>
+                            <span>$40,000</span>
+                            <span>$45,000</span>
+                            <span>$50,000</span>
+                        </div>
+                    </div>
+
+                    <!-- Pro tip -->
+                    <p class="pro-tip">
+                        <strong>Pro tip:</strong> Solar is not just for your roof. Solar carports generate added electricity, 
+                        shade for your visitors, and show customers you’re eco friendly.
+                    </p>`
     },
     3: {
       title: "Complete",
