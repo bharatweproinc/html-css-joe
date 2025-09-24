@@ -33,28 +33,29 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <!-- Slider -->
-                    <div class="mb-4">
-                        <label class="form-label text-identification-label">
-                            How much is your estimated monthly electric bill?
-                            <br><small class="text-identification-hint">(Just guess for now, we’ll get the actual amount later.)</small>
-                        </label>
+                    <div class="mb-4 slider-container">
+                      <label class="form-label text-identification-label">
+                        How much is your estimated monthly electric bill?
+                        <br><small class="text-identification-hint">(Just guess for now, we’ll get the actual amount later.)</small>
+                      </label>
 
-                        <!-- Custom slider -->
-                        <input type="range" min="0" max="50000" step="5000" value="15000" class="form-range custom-slider">
-                        <div class="d-flex justify-content-between text-identification-scale">
-                            <span>$0</span>
-                            <span>$5,000</span>
-                            <span>$10,000</span>
-                            <span>$15,000</span>
-                            <span>$20,000</span>
-                            <span>$25,000</span>
-                            <span>$30,000</span>
-                            <span>$35,000</span>
-                            <span>$40,000</span>
-                            <span>$45,000</span>
-                            <span>$50,000</span>
-                        </div>
+                      <input type="range" min="0" max="50000" step="5000" value="15000" class="custom-slider">
+
+                      <div class="slider-scale">
+                        <span>0</span>
+                        <span>5k</span>
+                        <span>10k</span>
+                        <span>15k</span>
+                        <span>20k</span>
+                        <span>25k</span>
+                        <span>30k</span>
+                        <span>35k</span>
+                        <span>40k</span>
+                        <span>45k</span>
+                        <span>50k</span>
+                      </div>
                     </div>
+
 
                     <!-- Pro tip -->
                     <p class="pro-tip">
