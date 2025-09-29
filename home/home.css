@@ -12,6 +12,8 @@
     --bg-primary-11: linear-gradient(#EFF6FF, #EEF2FF);
     --bg-primary-12: #0F131A;
     --bg-primary-13: linear-gradient(#F3F4F6, #E5E7EB);
+    --bg-primary-16: #243842;
+    
     --text-color-1: #FFF9E6;
     --text-color-1-light: #FFF9E6E5;
     --text-color-2: linear-gradient(#DC2626, #EA580C);
@@ -2336,3 +2338,29 @@
       margin-top: 10px;
       margin-bottom: 10px;
     }
+
+
+.mission-text {
+    font-size: 1rem;
+    color: var(--text-color-11);
+}
+
+@media (min-width: 992px) {
+    .mission-text {
+        width: 50% !important;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .info-card {
+        min-height: 230px;
+    }
+}
+
+.bg-dark-blue {
+    background-color: var(--bg-primary-16);
+}
+.mission-section{
+  background-color:var(--bg-primary-15) ;
+}
