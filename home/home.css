@@ -2422,6 +2422,7 @@
     .info-card .text-1 {
       color: var(--text-color-13);
       font-weight: 500;
+      font-size: 1rem;
     }
 
     .info-card .text-2 {
@@ -2503,4 +2504,10 @@
 
     .properties-section {
       background-color: var(--bg-primary-14);
+    }
+
+    .info-card .amount {
+      color: var(--bg-primary-2);
+      font-size: 1.3rem;
+      font-weight: 700;
     }
