@@ -277,24 +277,211 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section py-5 text-white">
-        <div class="container">
-        <h3 class="section-heading text-center mb-5">Frequently Asked Questions</h3>
-        <div class="accordion accordion-flush" id="faqAccordion">
-            <div class="accordion-item" v-for="q in faqs">
-            <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                How is the tax incentive so large?
-                </button>
-            </h2>
-            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body">Answer goes here.</div>
+    <section class="faq-section container d-flex flex-column justify-content-center align-items-center">
+        <h3 class="section-heading my-5 text-center">Frequently Asked Questions</h3>
+        <div class="accordion accordion-section" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        How is the tax incentive so large?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        Your tax incentives are based on the currently available regulations created to encourage businesses to install solar systems. When we create a Layout for your property, we show your estimated benefits in a table based on the size of your system. In addition to tax incentives, you may also qualify for EV Charging incentives. Importantly, all these incentives are scheduled to decline over time, so there is no better time to install solar than right now.
+                    </div>
+                </div>
             </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How is the electricity savings so big, when my monthly bill isn't that much?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        There are three major contributors to the large electric savings:<br><br>
+
+                        1. SolarPorts energy is often less than half the cost of Utility power. <br>
+                        2. Utility prices typically rise each year, while the cost of SolarPorts is fixed. <br>
+                        3. The amount of electricity needed for EV Charging can be more than your current electricity usage.<br><br>
+
+                        Together, these factors combine to create savings typically in millions of dollars. For example, a $4,100 monthly PG&E payment can be cut to $1,666. Over a 30-year system that adds to over $7,000,000 to PG&E versus $2,000,000 to SolarPorts. That's a $5,000,000 savings on a $4,100 monthly bill!               
+                    </div>
+                </div>
             </div>
-            <!-- Repeat accordion-item for all questions -->
-        </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Can SolarPorts fit on my property?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        SolarPorts are best suited to properties with unshaded parking. You should have a minimum of 10 parking spaces, however we can also add solar panels to your roof the old fashioned way too. Contact us for a brief consultation, where we can provide you with a custom Layout for your property including how much your tax incentive is likely to be, how much you'll save in electricity costs, and how much additional revenue you can generate from EV Charging.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        I heard Tesla will put EV Chargers on my property for free. Is that true?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">           
+                        For select properties (generally fairly large) Tesla will install Tesla chargers on your property. Tesla keeps all the tax incentives and all the revenue from charging, and of course does not lower your electric bill either. SolarPorts allows you to attract a wider group of EV owners (not just Tesla) and you get to keep the tax incentives, EV Charging revenue, and reduce the cost of your electricity to a low fixed rate for your chargers and your business. SolarPorts also provide a nice shade structure too!
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        How much is this going to cost me?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        The cost of your system is based on the amount of energy you want to produce and how many EV Chargers you want. With 100% financing, you pay $0 to start and are eligible to be PAID tax incentives worth about half the costs of the system. For example, if you are currently paying $4,100 to PG&E for electricity and you want to add 8 EV Chargers, your $4,100 monthly PG&E payment is cut to $1,666. So after putting up $0, you get:<br><br>
+
+                        1. Your electric bill immediately drops by 60%.<br>
+                        2. $589,000 in tax incentives up front.<br>
+                        3. EV Charging revenue of about $3,300,000.              
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        How many parking spaces do I need to power an EV charger?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        The power needed for each charger depends on how often the EV Charger is used. EV Charging usage is forecast to increase as the number of EVs grows from currently about 12% of California cars to nearly 100%. Estimating 2 hours per charger per day, you need a little over 1 parking space (SolarPort) per EV Charger. Many owners are planning for about 8 hours of EV Charging per day, which is 10 SolarPorts per EV Charger because they can use the power generated by the SolarPorts for their business now, as demand increases for the EV Chargers over time.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        How many EV Chargers should I install for my business?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        The number of EV Chargers you need for your business is increasing each year. Today about 10% of cars in California are electric, and that number is growing rapidly. We can help you estimate how many EV Chargers you should add, based on the type and size of your business.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        If solar prices are coming down, should I wait to install solar?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        The short answer is, no. The incentives provided now for adding solar are decreasing much faster than the prices for installing solar. Right now, you will be paid to install solar if you take the 100% financing. This will not last, and the incentives are scheduled to decrease each year until they are gone.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Does SolarPorts offer a warranty?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        Yes, SolarPorts provides a comprehensive warranty. The good news is very few solar systems need repair since there are no moving parts. In the unlikely event you have a failure, SolarPorts helps you invoke the original manufacturer's warranty and can even perform the covered warranty work at no cost to you.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        Do SolarPorts require maintenance?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        No. SolarPorts are designed to last over 30 years and the solar panels affixed to them do not require any maintenance.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        What is NEM3 and should I wait for it?
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        NEM3 is the acronym for Net Energy Metering, version 3. Currently we are operating under NEM2 whereby PG&E adds up all the power generated by your solar system and then "nets" out the cost of energy that you used from PG&E during the year. The Public Utilities Commission is currently negotiating with PG&E to provide the new NEM3 agreement. Based on the proposals provided so far, they will be worse for solar consumers than under NEM2. You will almost certainly be better off installing solar sooner under NEM2 rather than waiting for NEM3.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        I don't see that many Electric Vehicles. Should I do this now, or wait?
+                    </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        In 2022 about 12% of California vehicles are electric. That number is expected to increase as we near the mandate that 100% of cars be emission free. An advantage for installing EV Chargers now is that the government is providing tax incentives and cash rebates for early adopters. These incentives are scheduled to decrease over time. You will also be known as a place where EV owners come to charge their vehicles, so you will gain a larger share of the EV Charging revenue.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThirteen">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                        What if I plan to sell my property soon?
+                    </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        Property owners considering selling are excellent candidates for installing SolarPorts. The benefits of installing SolarPorts before a sale include:<br><br>
+
+                        1. Immediately capturing the available tax incentives now.<br>
+                        2. Reducing your electricity expense, which will be capitalized upon sale.<br>
+                        3. Generating a new revenue stream from EV Charging.<br><br>
+
+                        In the example of an owner with a $4,100 PG&E bill, and adding 8 EV Chargers: the electricity cost will be reduced from $4,100 to $1,666 which is $2,434 monthly or $29,208 annually. Upon sale at a 5% cap rate, that's worth $584,000. The tax incentives in the first year are $515,000. The new potential EV Charging income is $3,300,000 which is certainly worth something to a buyer.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFourteen">
+                    <button class="accordion-button collapsed text-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                        How long does it take to install SolarPorts?
+                    </button>
+                </h2>
+                <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-left text-2">
+                        SolarPorts revolutionized commercial solar installations with an automated process with standardized components. Instead of waiting weeks for a proposal and months for a design, SolarPorts creates an instant Layout that is ready for permit submittal immediately. Many SolarPorts designs are pre-approved at Planning and Building Departments so there is no waiting for design or approvals. Components are typically in inventory and ready for your installation, speeding your process.
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+
 
     </main>
 
@@ -359,5 +546,6 @@
         </div>
     </div>
 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

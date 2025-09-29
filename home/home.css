@@ -2511,3 +2511,51 @@
       font-size: 1.3rem;
       font-weight: 700;
     }
+    .accordion-section {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
+
+    .accordion-item {
+      background-color: transparent;
+      border: 1px solid var(--border-color-4) !important;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+
+    .accordion-button {
+      background-color: var(--bg-primary-4) !important;
+      border: solid red !important;
+      border: none !important  ;
+      box-shadow: none !important;
+      padding: 16px 20px;
+      border-radius: 10px;
+      color: #FDF4D8 !important;
+      font-weight: 500;
+    }
+
+    .accordion-button::after {
+      filter: invert(1);
+      transform: scale(1.2);
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: var(--bg-primary-4) !important;
+      color: #FDF4D8 !important;
+      border-bottom: 1px solid red;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .accordion-collapse {
+      background-color: var(--bg-primary-4);
+    }
+
+    .accordion-body {
+      padding: 16px 20px;
+      background-color: var(--bg-primary-4) !important;
+      border-radius: 0 0 10px 10px;
+      color: var(--text-color-12);
+      font-size: 0.8rem;
+    }
