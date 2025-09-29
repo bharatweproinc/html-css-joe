@@ -457,3 +457,15 @@ body {
     padding: 1rem;
   }
 }
+@media (max-width: 991px) {
+  .copyright {
+    justify-content: center;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .copyright {
+    justify-content: flex-start; 
+  }
+}

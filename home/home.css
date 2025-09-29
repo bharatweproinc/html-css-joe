@@ -2357,10 +2357,9 @@
     }
 }
 
-
-@media (max-width: 576px) {
+@media (max-width: 1024px) {
     .info-card {
-        min-height: 230px;
+        min-height: 260px !important; 
     }
 }
 
@@ -2416,7 +2415,7 @@
       border: 1px solid var(--border-color-4);
       border-radius: 8px;
       padding: 20px;
-      min-height: 160px;
+      min-height: 210px;
     }
 
     .info-card .text-1 {
@@ -2558,4 +2557,17 @@
       border-radius: 0 0 10px 10px;
       color: var(--text-color-12);
       font-size: 0.8rem;
+    }
+    @media (max-width: 991px) {
+      .copyright {
+        justify-content: center;
+      }
+
+    }
+
+
+    @media (min-width: 992px) {
+      .copyright {
+        justify-content: flex-start; 
+      }
     }
