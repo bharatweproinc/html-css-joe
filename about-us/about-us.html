@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .about-page {
+        background-color: #0d1117;
+        font-family: 'Inter', sans-serif;
+        color: #fff;
+        }
+
+        .about-hero {
+        padding: 80px 0;
+        background: url('../images/solar-bg.jpg') center/cover no-repeat;
+        }
+
+        .about-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #facc15;
+        }
+
+        .about-subtitle {
+        font-size: 1rem;
+        max-width: 700px;
+        margin: 20px auto;
+        color: #ddd;
+        }
+
+        .section-heading {
+        font-size: 1.8rem;
+        font-weight: 700;
+        }
+
+        .info-card {
+        background: #161b22;
+        border-radius: 8px;
+        padding: 20px;
+        }
+
+        .info-card h5, .info-card h4 {
+        color: #facc15;
+        font-weight: 700;
+        }
+
+        .property-card {
+        background: #161b22;
+        border-radius: 8px;
+        padding: 20px;
+        }
+
+        .highlight-box {
+        background: #1f2937;
+        border-radius: 8px;
+        padding: 30px;
+        }
+
+        .bg-dark-blue {
+        background-color: #1e293b !important;
+        }
+
+        .accordion-button {
+        background: #161b22;
+        color: #fff;
+        }
+
+        .accordion-button:not(.collapsed) {
+        color: #facc15;
+        background: #1f2937;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header container-fluid position-absolute top-0 start-0 z-3">
+        <div class="d-flex justify-content-between align-items-center py-2 px-xxl-5 px-lg-4 px-3">
+
+            <!-- Logo -->
+            <div class="logo d-flex align-items-center">
+            <div class="logo-circle"></div>
+            <p class="logo-text mb-0">SolarPorts</p>
+            </div>
+
+            <!-- Navbar -->
+            <nav class="d-none d-md-block">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link px-3">Home</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link px-3">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-3">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link px-3">Contact</a></li>
+            </ul>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="get-free-quote">
+            <button class="get-quote-btn">Get Free Quote</button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- About Us Section -->
+    <main class="about-page">
+
+    <!-- Hero Section -->
+    <section class="about-hero text-center text-white">
+        <div class="container">
+        <h2 class="about-title">About SolarPorts</h2>
+        <p class="about-subtitle">
+            SolarPorts combine carport solar with Electric Vehicle chargers for hotels, shopping centers,
+            apartments, and offices, helping businesses transform their parking lots into revenue-generating assets.
+        </p>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section py-5 text-white">
+        <div class="container text-center">
+        <h3 class="section-heading mb-4">Our Mission</h3>
+        <p class="mission-text mx-auto mb-5">
+            SolarPorts helps businesses utilize their untapped parking lots to discover significant financial
+            opportunities while contributing to a sustainable future.
+        </p>
+
+        <div class="row g-4">
+            <div class="col-md-3 col-6">
+            <div class="info-card">
+                <i class="bi bi-shield-check"></i>
+                <h5>Tax Incentives</h5>
+                <p>$10,000 <br> per parking space</p>
+            </div>
+            </div>
+            <div class="col-md-3 col-6">
+            <div class="info-card">
+                <i class="bi bi-lightning-charge"></i>
+                <h5>Electric Cost Savings</h5>
+                <p>$500,000 <br> per $1,000 of PG&E bill</p>
+            </div>
+            </div>
+            <div class="col-md-3 col-6">
+            <div class="info-card">
+                <i class="bi bi-ev-front"></i>
+                <h5>EV Charging Income</h5>
+                <p>$250,000 <br> per EV Charger</p>
+            </div>
+            </div>
+            <div class="col-md-3 col-6">
+            <div class="info-card">
+                <i class="bi bi-building-up"></i>
+                <h5>Property Value Increase</h5>
+                <p>Millions <br> based on improved cash flow</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <span class="badge bg-dark-blue px-4 py-2">
+            Typically 100% financing available - $0 initial investment
+            </span>
+        </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology-section py-5 text-white">
+        <div class="container">
+        <h3 class="section-heading text-center mb-5">Our Technology</h3>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+            <p>
+                SolarPorts proprietary software graphically places solar carports, rooftop solar,
+                and electric vehicle chargers on property satellite photos (Google Maps) reducing
+                the process of estimating and designing commercial solar systems from months to minutes.
+            </p>
+            <p>
+                This allows businesses to immediately see the benefits of installing solar,
+                and instantly create submittable plans for installing their solar system.
+            </p>
+            </div>
+            <div class="col-md-6">
+            <div class="highlight-box text-center">
+                <i class="bi bi-building"></i>
+                <h5>From Months to Minutes</h5>
+                <p>Revolutionary approach to commercial solar design and estimation</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section py-5 text-white text-center">
+        <div class="container">
+        <h3 class="section-heading mb-5">Our Experience</h3>
+        <div class="row g-4">
+            <div class="col-md-4">
+            <div class="info-card">
+                <h4>1,200+</h4>
+                <p>Projects Completed <br> Since 1992</p>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="info-card">
+                <h4>30+</h4>
+                <p>Years of Experience <br> Industry Pioneer</p>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="info-card">
+                <h4>100%</h4>
+                <p>Customer Satisfaction <br> Proven Track Record</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="properties-section py-5 text-white text-center">
+        <div class="container">
+        <h3 class="section-heading mb-5">Properties We Serve</h3>
+        <div class="row g-4">
+            <div class="col-md-3 col-6">
+            <div class="property-card">
+                <i class="bi bi-building"></i>
+                <h6>Hotels</h6>
+                <p>Guest parking with EV charging</p>
+            </div>
+            </div>
+            <div class="col-md-3 col-6">
+            <div class="property-card">
+                <i class="bi bi-shop"></i>
+                <h6>Shopping Centers</h6>
+                <p>Customer convenience & savings</p>
+            </div>
+            </div>
+            <div class="col-md-3 col-6">
+            <div class="property-card">
+                <i class="bi bi-houses"></i>
+                <h6>Apartments</h6>
+                <p>Resident amenities & property value</p>
+            </div>
+            </div>
+            <div class="col-md-3 col-6">
+            <div class="property-card">
+                <i class="bi bi-building"></i>
+                <h6>Offices</h6>
+                <p>Employee benefits & sustainability</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5 text-white">
+        <div class="container">
+        <h3 class="section-heading text-center mb-5">Frequently Asked Questions</h3>
+        <div class="accordion accordion-flush" id="faqAccordion">
+            <div class="accordion-item" v-for="q in faqs">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                How is the tax incentive so large?
+                </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Answer goes here.</div>
+            </div>
+            </div>
+            <!-- Repeat accordion-item for all questions -->
+        </div>
+        </div>
+    </section>
+
+    </main>
+
+    <div class="footer pt-5">
+        <div class="container">
+            <div class="top">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 mb-2">
+                        <div class="logo">
+                            <div class="logo-circle"></div>
+                            <p class="logo-text">SolarPorts</p>
+                        </div>
+                        <p class="description">
+                            Empowering businesses with clean, affordable solar
+                            energy solutions. Eliminate your electricity bills and join the
+                            renewable energy revolution.
+                        </p>
+                        <div class="social">
+                            <div class="social-icon">f</div>
+                            <div class="social-icon">t</div>
+                            <div class="social-icon">in</div>
+                        </div>
+                    </div>
+                    <div class="nav-links col-lg-6 col-sm-12 mb-2">
+                        <div class="services">
+                            <p class="heading-text">Services</p>
+                            <ul class="footer-nav-list">
+                                <li>Solar Analysis</li>
+                                <li>System Design</li>
+                                <li>Installation</li>
+                                <li>Maintenance</li>
+                                <li>Financing</li>
+                            </ul>
+                        </div>
+                        <div class="company">
+                            <p class="heading-text">Company</p>
+                            <ul class="footer-nav-list">
+                                <li>About Us</li>
+                                <li>Careers</li>
+                                <li>Partners</li>
+                                <li>Contact</li>
+                                <li>Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="d-flex w-100 justify-content-between flex-wrap justify-content-sm-center">
+                    <div class="copyright mb-sm-2">
+                        © 2024 SolarPorts. All rights reserved.
+                    </div>
+                    <div>
+                        <ul class="unordered-list mb-sm-2">
+                            <li>Privacy Policy</li>
+                            <li>Terms of Service</li>
+                            <li>Cookie Policy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
